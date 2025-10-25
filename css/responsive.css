@@ -1,0 +1,502 @@
+/* ============================
+   TABLET (Max-width: 1024px)
+   ============================ */
+
+   
+
+@media (max-width: 1024px) {
+  :root {
+    --section-padding: 80px 5%;
+  }
+  
+  .hero-title {
+    font-size: 3rem;
+  }
+  
+  .spline-container {
+    width: 50%;
+  }
+  
+  .about-grid {
+    gap: 3rem;
+  }
+  
+  .profile-image-container {
+    width: 300px;
+    height: 300px;
+  }
+  
+  .section-title {
+    font-size: 2.5rem;
+  }
+  
+  .projects-grid {
+    grid-template-columns: repeat(2, 350px);
+  }
+}
+
+/* ============================
+   MOBILE (Max-width: 768px)
+   ============================ */
+
+@media (max-width: 768px) {
+  :root {
+    --section-padding: 60px 5%;
+  }
+
+
+  /* ============================
+   MOBILE (Max-width: 768px)
+   ============================ */
+
+@media (max-width: 768px) {
+  
+  /* ... your existing mobile styles ... */
+  
+  /* ===================================
+     📱 PRELOADER - CENTERED ON MOBILE
+     =================================== */
+  
+  .preloader {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 1rem;
+  }
+  
+  /* Remove desktop offsets - center everything */
+  .preloader-spline {
+    position: relative;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: none !important; /* Hide Spline on mobile */
+  }
+  
+  /* Center preloader content */
+  .preloader-content {
+    position: relative;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    transform: none !important;
+    text-align: center;
+    z-index: 10;
+    padding: 0 1rem;
+  }
+  
+  /* Scale down logo for mobile */
+  .preloader-logo {
+    font-size: 3.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  /* Adjust progress bar size */
+  .progress-container {
+    width: 80%;
+    max-width: 300px;
+    margin: 0 auto 1rem;
+  }
+  
+  /* Progress text size */
+  .progress-text {
+    font-size: 2rem;
+  }
+  
+  /* Center glow orbs */
+  .glow-orb.orb-1,
+  .glow-orb.orb-2 {
+    position: absolute;
+  }
+  
+  .glow-orb.orb-1 {
+    width: 200px;
+    height: 200px;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .glow-orb.orb-2 {
+    width: 250px;
+    height: 250px;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+/* ============================
+   SMALL MOBILE (Max-width: 480px)
+   ============================ */
+
+@media (max-width: 480px) {
+  
+  /* Even smaller logo */
+  .preloader-logo {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Smaller progress bar */
+  .progress-container {
+    width: 250px;
+    height: 3px;
+  }
+  
+  /* Smaller progress text */
+  .progress-text {
+    font-size: 1.5rem;
+  }
+  
+  /* Reduce glow orb sizes */
+  .glow-orb.orb-1 {
+    width: 150px;
+    height: 150px;
+  }
+  
+  .glow-orb.orb-2 {
+    width: 180px;
+    height: 180px;
+  }
+}
+
+  
+  /* ===================================
+     🚫 REMOVE ALL SPLINE ON MOBILE
+     =================================== */
+
+
+     
+  
+  /* Hide preloader Spline */
+  .preloader-spline {
+    display: none !important;
+  }
+  
+  /* Hide hero Spline */
+  .hero-section .spline-container {
+    display: none !important;
+  }
+  
+  /* Hide About section Spline */
+  .about-spline-background {
+    display: none !important;
+  }
+  
+  /* Hide any other Spline containers */
+  .spline-container,
+  spline-viewer {
+    display: none !important;
+  }
+  
+  /* ===================================
+     📱 MOBILE OPTIMIZATIONS
+     =================================== */
+  
+  /* Navigation */
+  .nav-links {
+    display: none;
+  }
+  
+  .hamburger {
+    display: flex;
+  }
+  
+  /* ============================
+   MOBILE (Max-width: 768px)
+   ============================ */
+
+@media (max-width: 768px) {
+  
+  /* ... keep your existing preloader and navigation styles ... */
+  
+  /* Hero Section */
+  .hero-section {
+    height: auto;
+    min-height: 100vh;
+    padding: 100px 5% 60px;
+    background: linear-gradient(
+      135deg,
+      rgba(99, 102, 241, 0.15) 0%,
+      rgba(139, 92, 246, 0.15) 50%,
+      rgba(236, 72, 153, 0.15) 100%
+    );
+  }
+  
+  .hero-content {
+    text-align: center;
+    padding: 2rem 1.5rem;
+    background: rgba(30, 30, 93, 0.7);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    max-width: 100%;
+  }
+  
+  .hero-title {
+    font-size: 2.5rem !important;
+    line-height: 1.9!important;
+    display: inline-block !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 0.6rem !important;
+    white-space: nowrap;
+  }
+  
+  /* CRITICAL FIX: Role Container */
+  .role-container {
+    display: block !important;
+    position: relative !important;
+    min-width: 100% !important;
+    max-width: 100% !important;
+    width: 100% !important;
+    height: 1.7em !important; /* Taller for wrapped text */
+    overflow: hidden !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  
+  /* CRITICAL FIX: Role Text - Smaller Font, Wrapping Enabled */
+  .role-text {
+    position: absolute !important;
+    left: 0 !important;
+    top: 0 !important;
+    width: 100% !important;
+    font-size: 0.75em !important; /* 75% of hero-title size */
+    font-weight: 600 !important;
+    line-height: 1.3 !important;
+    text-align: center !important;
+    white-space: nowrap !important; /* ALLOW WRAPPING */
+    word-wrap: break-word !important;
+    overflow-wrap: break-word !important;
+    padding: 0 1rem !important;
+    box-sizing: border-box !important;
+    text-overflow: ellipsis !important; /* Add ... */
+
+  }
+  
+  .hero-subtitle {
+    font-size: 1.1rem !important;
+    margin: 1rem 0 !important;
+    line-height: 1.5 !important;
+  }
+  
+  .cta-buttons {
+    flex-direction: column !important;
+    gap: 1rem !important;
+    margin-top: 1.5rem !important;
+  }
+  
+  .cta-buttons .btn {
+    width: 100% !important;
+  }
+}
+
+/* ============================
+   SMALL MOBILE (Max-width: 480px)
+   ============================ */
+
+@media (max-width: 480px) {
+  
+  .hero-title {
+    font-size: 2rem !important;
+  }
+  
+  /* Even smaller role text for small screens */
+  .role-container {
+    height: 0.9em !important; /* More space for wrapped text */
+  }
+  
+  .role-text {
+    font-size: 0.7em !important; /* 70% of hero-title */
+    line-height: 1.2 !important;
+  }
+  
+  .hero-content {
+    padding: 1.5rem 1rem !important;
+  }
+}
+
+/* ============================
+   VERY SMALL MOBILE (Max-width: 360px)
+   ============================ */
+
+@media (max-width: 360px) {
+  
+  .hero-title {
+    font-size: 1.75rem !important;
+  }
+  
+  .role-text {
+    font-size: 0.65em !important; /* Even smaller */
+  }
+}
+
+  
+  /* About Section */
+  .about-section {
+    /* Add gradient background since Spline is removed */
+    background: linear-gradient(
+      135deg,
+      rgba(99, 102, 241, 0.05) 0%,
+      rgba(139, 92, 246, 0.05) 100%
+    );
+  }
+  
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    text-align: center;
+  }
+  
+  .profile-image-container {
+    top: 60px;
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
+  }
+  
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  
+  .skill-card {
+    padding: 1rem;
+  }
+  
+  /* Projects Section */
+  .projects-scroll-container {
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch; /* Smooth iOS scrolling */
+  }
+  
+  .projects-grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    padding: 1rem 0;
+  }
+  
+  .project-card {
+    width: 100%;
+    min-width: 300px;
+  }
+  
+  /* Contact Section */
+  .contact-content {
+    padding: 0 1rem;
+  }
+  
+  .contact-form {
+    max-width: 100%;
+  }
+  
+  .social-links {
+    gap: 1.5rem;
+    justify-content: center;
+  }
+  
+  .social-icon {
+    width: 50px;
+    height: 50px;
+    font-size: 1.2rem;
+  }
+  
+  /* Footer */
+  .footer-nav {
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+  }
+}
+
+/* ============================
+   SMALL MOBILE (Max-width: 480px)
+   ============================ */
+
+@media (max-width: 480px) {
+  
+  /* Preloader adjustments */
+  .preloader-logo {
+    font-size: 3rem;
+  }
+  
+  .progress-container {
+    width: 250px;
+  }
+  
+  /* Hero Section */
+  .hero-title {
+    font-size: 2rem;
+    margin: 0%;
+  }
+  
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+  
+  .hero-content {
+    padding: 1.5rem 1rem;
+  }
+  
+  /* Section titles */
+  .section-title {
+    font-size: 2rem;
+  }
+  
+  /* Skills */
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  /* Projects */
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .project-card {
+    width: 100%;
+    min-width: 280px;
+  }
+  
+  /* Footer */
+  .footer-nav {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  /* Ensure all Spline is hidden on small mobile too */
+  .preloader-spline,
+  .spline-container,
+  .about-spline-background,
+  spline-viewer {
+    display: none !important;
+  }
+}
+
+/* ============================
+   LANDSCAPE MOBILE
+   ============================ */
+
+@media (max-width: 768px) and (orientation: landscape) {
+  .hero-section {
+    min-height: auto;
+    padding: 80px 5% 40px;
+  }
+  
+  .hero-content {
+    padding: 1.5rem;
+  }
+  
+  .hero-title {
+    font-size: 2rem;
+  }
+}
