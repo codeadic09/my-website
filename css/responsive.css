@@ -264,7 +264,7 @@
     width: 100% !important;
     height: 1.7em !important; /* Taller for wrapped text */
     overflow: hidden !important;
-    margin-right: 250px !important;
+    margin-right: 280px !important;
     z-index: 10;
   }
   
@@ -323,7 +323,7 @@
   
   .role-text {
     font-size: 0.7em !important; /* 70% of hero-title */
-    line-height: 1.8 !important;
+    line-height: 1.9 !important;
   }
   
   .hero-content {
@@ -343,7 +343,7 @@
   
   .role-text {
     font-size: 0.65em !important; /* Even smaller */
-    line-height: 1.8;
+    line-height: 1.9 !important;
   }
 }
 
