@@ -222,6 +222,7 @@
     height: auto;
     min-height: 100vh;
     padding: 100px 5% 60px;
+    z-index: 1;
     background: linear-gradient(
       135deg,
       rgba(99, 102, 241, 0.15) 0%,
@@ -234,59 +235,63 @@
     text-align: center;
     padding: 2rem 1.5rem;
     background: rgba(30, 30, 93, 0.7);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(0px);
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 20px;
     max-width: 100%;
+    z-index: 10;
   }
   
   .hero-title {
-    font-size: 2.5rem !important;
+    font-size: 1.5rem !important;
     line-height: 1.9!important;
     display: inline-block !important;
     flex-direction: column !important;
     align-items: center !important;
     gap: 0.6rem !important;
-    white-space: nowrap;
+    white-space: normal !important; /* Allow wrapping */
+    z-index: 10;
   }
   
   /* CRITICAL FIX: Role Container */
   .role-container {
     display: block !important;
     position: relative !important;
+    right: 0 !important;
     min-width: 100% !important;
     max-width: 100% !important;
     width: 100% !important;
     height: 1.7em !important; /* Taller for wrapped text */
     overflow: hidden !important;
-    margin: 0 !important;
-    padding: 0 !important;
+    margin-right: 250px !important;
+    z-index: 10;
   }
   
   /* CRITICAL FIX: Role Text - Smaller Font, Wrapping Enabled */
   .role-text {
     position: absolute !important;
-    left: 0 !important;
+    /* right: 15px !important; */
     top: 0 !important;
     width: 100% !important;
     font-size: 0.75em !important; /* 75% of hero-title size */
     font-weight: 600 !important;
-    line-height: 1.3 !important;
+    line-height: 1.8 !important;
     text-align: center !important;
-    white-space: nowrap !important; /* ALLOW WRAPPING */
-    word-wrap: break-word !important;
-    overflow-wrap: break-word !important;
-    padding: 0 1rem !important;
+    /* white-space: normal; */
+    word-wrap: normal;
+    overflow-wrap: nowrap;
+    padding: 0 0rem !important;
     box-sizing: border-box !important;
-    text-overflow: ellipsis !important; /* Add ... */
-
+    /* text-overflow: ellipsis !important; Add ... */
+    overflow: hidden !important;
   }
   
   .hero-subtitle {
     font-size: 1.1rem !important;
     margin: 1rem 0 !important;
     line-height: 1.5 !important;
+    z-index: 10;
   }
   
   .cta-buttons {
@@ -312,12 +317,13 @@
   
   /* Even smaller role text for small screens */
   .role-container {
-    height: 0.9em !important; /* More space for wrapped text */
+    height: 1.5em !important;
+    line-height: normal; /* More space for wrapped text */
   }
   
   .role-text {
     font-size: 0.7em !important; /* 70% of hero-title */
-    line-height: 1.2 !important;
+    line-height: 1.8 !important;
   }
   
   .hero-content {
@@ -337,6 +343,7 @@
   
   .role-text {
     font-size: 0.65em !important; /* Even smaller */
+    line-height: 1.8;
   }
 }
 
@@ -365,7 +372,7 @@
   }
   
   .skills-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 2fr);
     gap: 1rem;
   }
   
@@ -380,7 +387,7 @@
   }
   
   .projects-grid {
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, fr));
     gap: 1.5rem;
     padding: 1rem 0;
   }
