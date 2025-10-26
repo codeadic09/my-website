@@ -526,6 +526,7 @@ body {
 .about-right {
     position: relative;
     z-index: 100;
+    align-items: right;
 }
 
 
