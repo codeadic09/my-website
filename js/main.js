@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // Wait for Locomotive to initialize
     setTimeout(() => {
-        const allNavLinks = document.querySelectorAll('.nav-links a, .mobile-link, .footer-links a');
+        const allNavLinks = document.querySelectorAll('.cta-button, .scroll-down-button, .nav-links a, .mobile-link, .footer-links a');
         
         allNavLinks.forEach(link => {
             link.addEventListener('click', function(e) {
@@ -65,25 +65,25 @@ document.addEventListener('DOMContentLoaded', () => {
     // ACTIVE NAV ON SCROLL
     // ============================
     
-    window.addEventListener('scroll', () => {
-        const sections = document.querySelectorAll('section[id]');
-        const scrollY = window.pageYOffset;
+    // window.addEventListener('scroll', () => {
+    //     const sections = document.querySelectorAll('section[id]');
+    //     const scrollY = window.pageYOffset;
         
-        sections.forEach(section => {
-            const sectionHeight = section.offsetHeight;
-            const sectionTop = section.offsetTop - 100;
-            const sectionId = section.getAttribute('id');
+    //     sections.forEach(section => {
+    //         const sectionHeight = section.offsetHeight;
+    //         const sectionTop = section.offsetTop - 100;
+    //         const sectionId = section.getAttribute('id');
             
-            if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
-                document.querySelectorAll('.nav-links a').forEach(link => {
-                    link.classList.remove('active');
-                    if (link.getAttribute('href') === `#${sectionId}`) {
-                        link.classList.add('active');
-                    }
-                });
-            }
-        });
-    });
+    //         if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+    //             document.querySelectorAll('.nav-links a').forEach(link => {
+    //                 link.classList.remove('active');
+    //                 if (link.getAttribute('href') === `#${sectionId}`) {
+    //                     link.classList.add('active');
+    //                 }
+    //             });
+    //         }
+    //     });
+    // });
 
     // ============================
     // FORM SUBMISSION

@@ -289,7 +289,7 @@
   
   .hero-subtitle {
     font-size: 1.1rem !important;
-    margin: 1rem 0 !important;
+    margin: 0rem 0 !important;
     line-height: 1.5 !important;
     z-index: 10;
   }
@@ -368,12 +368,16 @@
     top: 60px;
     width: 250px;
     height: 250px;
-    margin: 0 auto;
+    margin: 70px auto;
   }
   
   .skills-grid {
     grid-template-columns: repeat(3, 2fr);
     gap: 1rem;
+  }
+
+  .skill-item {
+    padding: 1rem;
   }
   
   .skill-card {
@@ -457,11 +461,16 @@
   /* Section titles */
   .section-title {
     font-size: 2rem;
+    padding-top: 20px;
+  }
+  .section-title2 {
+    font-size: 2rem;
+    padding-top: 20px;
   }
   
   /* Skills */
   .skills-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(3, 2fr);
   }
   
   /* Projects */

@@ -472,17 +472,17 @@ function initAboutAnimations() {
     // ============================
     // 1. SECTION TITLE - Fade In & Scale
     // ============================
-    gsap.fromTo('.about-section .section-title',
+    gsap.fromTo('.about-section .section-title .section-title2',
         {
             opacity: 0,
-            y: 60,
+            y: 30,
             scale: 0.9
         },
         {
             scrollTrigger: {
                 trigger: '.about-section',
                 scroller: '[data-scroll-container]',
-                start: 'top 80%',
+                start: 'top 40%',
                 end: 'top 50%',
                 scrub: 1.5,
                 markers: false
@@ -584,7 +584,7 @@ function initAboutAnimations() {
     });
 
     // Section Title (Slow - moves up slightly)
-    gsap.to('.about-section .section-title', {
+    gsap.to('.about-section .section-title', 'section-title2', {
         scrollTrigger: {
             trigger: '.about-section',
             scroller: '[data-scroll-container]',

@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const progressText = document.querySelector('.progress-text');
     
     let progress = 0;
-    const duration = 4000; // 2 seconds
+    const duration = 40; // 2 seconds
     const interval = 20; // Update every 20ms
     const increment = 100 / (duration / interval);
     
