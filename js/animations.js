@@ -506,8 +506,8 @@ function initAboutAnimations() {
             scrollTrigger: {
                 trigger: '.about-text',
                 scroller: '[data-scroll-container]',
-                start: 'top 75%',
-                end: 'top 40%',
+                start: 'top 90%',
+                end: 'top 80%',
                 scrub: 2
             },
             y: 100,
@@ -597,17 +597,17 @@ function initAboutAnimations() {
     });
 
     // About Text (Medium - moves up)
-    // gsap.to('.about-text', {
-    //     scrollTrigger: {
-    //         trigger: '.about-section',
-    //         scroller: '[data-scroll-container]',
-    //         start: 'top bottom',
-    //         end: 'bottom top',
-    //         scrub: 1.5
-    //     },
-    //     y: -60,
-    //     ease: 'none'
-    // });
+    gsap.to('.about-text', {
+        scrollTrigger: {
+            trigger: '.about-section',
+            scroller: '[data-scroll-container]',
+            start: 'top bottom',
+            end: 'bottom top',
+            scrub: 1.5
+        },
+        y: -60,
+        ease: 'none'
+    });
 
     // Skills Grid (Fastest - moves up most)
     gsap.to('.skills-grid', {
