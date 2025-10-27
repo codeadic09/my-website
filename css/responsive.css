@@ -373,7 +373,7 @@
   }
   
   .profile-image-container {
-    top: 100px;
+    top: 50px;
     width: 300px;
     height: 300px;
     margin: 0px auto;
@@ -469,7 +469,7 @@
   /* Section titles */
   .section-title {
     font-size: 2rem;
-    padding-top: 60px;
+    padding-top: 80px;
   }
   .section-title2 {
     font-size: 2rem;
@@ -522,5 +522,102 @@
   
   .hero-title {
     font-size: 2rem;
+  }
+}
+
+
+/* ============================
+   MOBILE - EXPERIENCE SECTION
+   ============================ */
+
+@media (max-width: 768px) {
+  
+  .experience-section {
+    padding: 60px 5%;
+  }
+  
+  .experience-timeline {
+    margin-top: 2rem;
+  }
+  
+  .experience-timeline::before {
+    left: 15px;
+  }
+  
+  .experience-item {
+    padding-left: 50px;
+    margin-bottom: 2rem;
+  }
+  
+  .experience-icon {
+    width: 40px;
+    height: 40px;
+    left: 0;
+  }
+  
+  .experience-icon i {
+    font-size: 1.3rem;
+  }
+  
+  .experience-content {
+    padding: 1.5rem;
+  }
+  
+  .experience-header {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .experience-title {
+    font-size: 1.2rem;
+  }
+  
+  .experience-company {
+    font-size: 0.9rem;
+  }
+  
+  .experience-date {
+    align-self: flex-start;
+    font-size: 0.85rem;
+    padding: 0.4rem 0.8rem;
+  }
+  
+  .experience-description li {
+    font-size: 0.9rem;
+    margin-bottom: 0.6rem;
+    padding-left: 1.2rem;
+  }
+  
+  .experience-description li::before {
+    font-size: 1rem;
+  }
+  
+  .experience-tags .tag {
+    font-size: 0.8rem;
+    padding: 0.4rem 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  
+  .experience-content {
+    padding: 1.25rem;
+  }
+  
+  .experience-title {
+    font-size: 1.1rem;
+  }
+  
+  .experience-description li {
+    font-size: 0.85rem;
+  }
+  
+  .experience-tags {
+    gap: 0.4rem;
+  }
+  
+  .experience-tags .tag {
+    font-size: 0.75rem;
+    padding: 0.35rem 0.7rem;
   }
 }

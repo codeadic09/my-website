@@ -34,32 +34,32 @@ document.addEventListener('DOMContentLoaded', () => {
     // ============================
     
     // Wait for Locomotive to initialize
-    setTimeout(() => {
-        const allNavLinks = document.querySelectorAll('.cta-button, .scroll-down-button, .nav-links a, .mobile-link, .footer-links a');
+    // setTimeout(() => {
+    //     const allNavLinks = document.querySelectorAll('.cta-button, .nav-links a, .mobile-link, .footer-links a');
         
-        allNavLinks.forEach(link => {
-            link.addEventListener('click', function(e) {
-                e.preventDefault();
+    //     allNavLinks.forEach(link => {
+    //         link.addEventListener('click', function(e) {
+    //             e.preventDefault();
                 
-                const targetId = this.getAttribute('href');
-                if (!targetId || targetId === '#') return;
+    //             const targetId = this.getAttribute('href');
+    //             if (!targetId || targetId === '#') return;
                 
-                const targetSection = document.querySelector(targetId);
+    //             const targetSection = document.querySelector(targetId);
                 
-                // Use Locomotive Scroll (same as footer)
-                if (targetSection && window.locomotiveScroll) {
-                    window.locomotiveScroll.scrollTo(targetSection, {
-                        duration: 1500,
-                        easing: [0.25, 0.00, 0.35, 1.00]
-                    });
+    //             // Use Locomotive Scroll (same as footer)
+    //             if (targetSection && window.locomotiveScroll) {
+    //                 window.locomotiveScroll.scrollTo(targetSection, {
+    //                     duration: 1500,
+    //                     easing: [0.25, 0.00, 0.35, 1.00]
+    //                 });
                     
-                    // Update active state
-                    allNavLinks.forEach(navLink => navLink.classList.remove('active'));
-                    this.classList.add('active');
-                }
-            });
-        });
-    }, 3500); // Wait for Locomotive to be ready
+    //                 // Update active state
+    //                 allNavLinks.forEach(navLink => navLink.classList.remove('active'));
+    //                 this.classList.add('active');
+    //             }
+    //         });
+    //     });
+    // }, 3500); // Wait for Locomotive to be ready
 
     // ============================
     // ACTIVE NAV ON SCROLL
