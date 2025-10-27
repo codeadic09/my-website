@@ -41,11 +41,12 @@ window.addEventListener('load', () => {
     initRoleScrollAnimation();
 });
 
+ 
 
 
 // ============================
-// REPEATING FADE-IN ANIMATIONS
-// Animates on scroll up AND down
+// REPEATABLE FADE-IN ANIMATIONS
+// Fades in every time you scroll down to it
 // ============================
 
 gsap.registerPlugin(ScrollTrigger);
@@ -59,16 +60,16 @@ document.addEventListener('DOMContentLoaded', () => {
 function initAnimations() {
   
   // ============================
-  // HERO SECTION - One Time Only
+  // HERO SECTION
   // ============================
   
-  gsap.from('.hero-content', {
-    opacity: 0,
-    y: 30,
-    duration: 1,
-    ease: 'power2.out',
-    delay: 0.3
-  });
+//   gsap.from('.hero-content', {
+//     opacity: 0,
+//     y: 30,
+//     duration: 1,
+//     ease: 'power2.out',
+//     delay: 0.3
+//   });
   
   // ============================
   // ABOUT SECTION
@@ -83,8 +84,8 @@ function initAnimations() {
       scrollTrigger: {
         trigger: '.about-section',
         start: 'top 80%',
-        end: 'bottom 60%',
-        toggleActions: 'play reverse play reverse'
+        end: 'bottom 20%',
+        toggleActions: 'play none none reset'
       },
       opacity: 1,
       y: 0,
@@ -102,8 +103,8 @@ function initAnimations() {
       scrollTrigger: {
         trigger: '.about-section',
         start: 'top 75%',
-        end: 'bottom 60%',
-        toggleActions: 'play reverse play reverse'
+        end: 'bottom 20%',
+        toggleActions: 'play none none reset'
       },
       opacity: 1,
       y: 0,
@@ -126,8 +127,8 @@ function initAnimations() {
       scrollTrigger: {
         trigger: '.projects-section',
         start: 'top 80%',
-        end: 'bottom 60%',
-        toggleActions: 'play reverse play reverse'
+        end: 'bottom 20%',
+        toggleActions: 'play none none reset'
       },
       opacity: 1,
       y: 0,
@@ -145,8 +146,8 @@ function initAnimations() {
       scrollTrigger: {
         trigger: '.projects-section',
         start: 'top 75%',
-        end: 'bottom 60%',
-        toggleActions: 'play reverse play reverse'
+        end: 'bottom 20%',
+        toggleActions: 'play none none reset'
       },
       opacity: 1,
       y: 0,
@@ -156,7 +157,6 @@ function initAnimations() {
     }
   );
   
-  // Project cards
   gsap.fromTo('.project-card',
     {
       opacity: 0,
@@ -166,8 +166,8 @@ function initAnimations() {
       scrollTrigger: {
         trigger: '.projects-grid',
         start: 'top 75%',
-        end: 'bottom 60%',
-        toggleActions: 'play reverse play reverse'
+        end: 'bottom 20%',
+        toggleActions: 'play none none reset'
       },
       opacity: 1,
       y: 0,
@@ -190,8 +190,8 @@ function initAnimations() {
       scrollTrigger: {
         trigger: '.experience-section',
         start: 'top 80%',
-        end: 'bottom 60%',
-        toggleActions: 'play reverse play reverse'
+        end: 'bottom 20%',
+        toggleActions: 'play none none reset'
       },
       opacity: 1,
       y: 0,
@@ -209,8 +209,8 @@ function initAnimations() {
       scrollTrigger: {
         trigger: '.experience-section',
         start: 'top 75%',
-        end: 'bottom 60%',
-        toggleActions: 'play reverse play reverse'
+        end: 'bottom 20%',
+        toggleActions: 'play none none reset'
       },
       opacity: 1,
       y: 0,
@@ -220,7 +220,6 @@ function initAnimations() {
     }
   );
   
-  // Experience items
   gsap.fromTo('.experience-item',
     {
       opacity: 0,
@@ -230,8 +229,8 @@ function initAnimations() {
       scrollTrigger: {
         trigger: '.experience-timeline',
         start: 'top 75%',
-        end: 'bottom 60%',
-        toggleActions: 'play reverse play reverse'
+        end: 'bottom 20%',
+        toggleActions: 'play none none reset'
       },
       opacity: 1,
       y: 0,
@@ -254,8 +253,8 @@ function initAnimations() {
       scrollTrigger: {
         trigger: '.contact-section',
         start: 'top 80%',
-        end: 'bottom 60%',
-        toggleActions: 'play reverse play reverse'
+        end: 'bottom 20%',
+        toggleActions: 'play none none reset'
       },
       opacity: 1,
       y: 0,
@@ -273,8 +272,8 @@ function initAnimations() {
       scrollTrigger: {
         trigger: '.contact-section',
         start: 'top 75%',
-        end: 'bottom 60%',
-        toggleActions: 'play reverse play reverse'
+        end: 'bottom 20%',
+        toggleActions: 'play none none reset'
       },
       opacity: 1,
       y: 0,
@@ -284,11 +283,9 @@ function initAnimations() {
     }
   );
   
-  console.log('✅ Repeating animations initialized');
+  console.log('✅ Repeatable fade-in animations initialized');
 }
 
-// Refresh ScrollTrigger
 window.addEventListener('load', () => {
   ScrollTrigger.refresh();
 });
-

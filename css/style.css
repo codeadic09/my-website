@@ -1471,6 +1471,25 @@ body {
   opacity: 1;
 } */
 
+/* ============================
+   DISABLE SCROLL DURING PRELOAD
+   ============================ */
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: var(--bg-dark);
+  color: var(--text-primary);
+  overflow-x: hidden;
+  line-height: 1.6;
+  font-weight: 300;
+  overflow: hidden; /* ✅ ADD THIS - Disable scroll initially */
+}
+
+/* After preloader is done, enable scrolling */
+body.loaded {
+  overflow: visible !important;
+  overflow-x: hidden;
+}
 
 
 
