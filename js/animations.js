@@ -57,6 +57,44 @@ document.addEventListener('DOMContentLoaded', () => {
   }, 3500);
 });
 
+
+const isMobile = window.innerWidth <= 768;
+
+gsap.registerPlugin(ScrollTrigger);
+
+document.addEventListener('DOMContentLoaded', () => {
+  setTimeout(() => {
+    // Only initialize animations on desktop
+    if (!isMobile) {
+      initAnimations();
+    } else {
+      // On mobile, show all content immediately (no animations)
+      showAllContent();
+    }
+  }, 3500);
+});
+
+// Function to show all content on mobile (no animations)
+function showAllContent() {
+  gsap.set([
+    '.hero-content',
+    '.about-section',
+    '.projects-section',
+    '.experience-section',
+    '.contact-section',
+    '.section-title',
+    '.project-card',
+    '.experience-item'
+  ], {
+    opacity: 1,
+    y: 0,
+    filter: 'blur(0px)'
+  });
+  
+  console.log('✅ Mobile mode - animations disabled');
+}
+
+
 function initAnimations() {
   
   // ============================

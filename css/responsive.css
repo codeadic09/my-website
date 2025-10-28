@@ -621,3 +621,41 @@
     padding: 0.35rem 0.7rem;
   }
 }
+
+
+
+
+
+
+
+
+/* ============================
+   DISABLE ANIMATIONS ON MOBILE
+   ============================ */
+
+@media (max-width: 768px) {
+  
+  /* Make all sections visible immediately */
+  .hero-content,
+  .about-section,
+  .projects-section,
+  .experience-section,
+  .contact-section,
+  .section-title,
+  .project-card,
+  .experience-item,
+  .experience-content,
+  .experience-icon {
+    opacity: 1 !important;
+    transform: none !important;
+    filter: none !important;
+  }
+  
+  /* Disable ScrollTrigger */
+  [data-scroll],
+  [data-scroll-section] {
+    transform: none !important;
+  }
+  
+  
+}
