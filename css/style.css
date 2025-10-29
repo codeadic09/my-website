@@ -389,10 +389,10 @@ body {
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 80%; /* Controls fade height - adjust as needed */
+  height: 100%; /* Controls fade height - adjust as needed */
   background: linear-gradient(
     to top,
-    var(--bg-dark) 0%,           /* Solid dark at bottom */
+    var(--bg-dark) 10%,           /* Solid dark at bottom */
     rgba(10, 10, 15, 0.8) 20%,   /* 80% opacity */
     rgba(10, 10, 15, 0.4) 50%,   /* 40% opacity */
     transparent 100%              /* Fully transparent at top */
@@ -548,11 +548,12 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: 1;
+    z-index: 5;
     opacity: 0.5;
     /* filter: blur(3px); */
     pointer-events: none !important;
-    will-change: opacity, filter;  /* Performance optimization */
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+
 }
 
 
