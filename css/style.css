@@ -604,12 +604,12 @@ body {
     height: 100%;
     object-fit: cover;
     border-radius: 50%;
-    border: 3px solid rgba(99, 102, 241, 0.3);
+    border: 3px solid rgba(77, 80, 247, 0.56);
     transition: var(--transition-smooth);
 }
 
 .profile-image-container:hover .profile-image {
-    transform: rotate(5deg) scale(1.05);
+    transform: rotate(5deg) scale(1.09);
 }
 
 .profile-glow {
@@ -721,6 +721,7 @@ body {
    ============================ */
 .projects-section {
     padding: var(--section-padding);
+    padding-bottom: 0px;
     position: relative;
     z-index: 10;
     
@@ -863,7 +864,7 @@ body {
 }
 
 .section-title-exp {
-    padding-top: 20px;
+    padding-top: 70px;
     font-size: 3rem;
     font-weight: 700;
     margin-bottom: 0rem;
