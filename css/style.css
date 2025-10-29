@@ -450,6 +450,10 @@ body {
     pointer-events: auto;
 }
 
+.gradient-text {
+    color: var(--secondary-color);
+}
+
 
 .hero-subtitle {
     font-size: 1.3rem;
