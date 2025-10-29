@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const progressText = document.querySelector('.progress-text');
   
   let progress = 0;
-  const duration = 3000;
+  const duration = 4000;
   const interval = 20;
   const increment = 100 / (duration / interval);
   
