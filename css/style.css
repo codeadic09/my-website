@@ -877,6 +877,10 @@ body {
   opacity: 1; /* Initial state for animation */
 }
 
+.section-subtitle6 {
+    padding-bottom: 20px;
+}
+
 .experience-timeline {
   max-width: 900px;
   margin: 4rem auto 0;
