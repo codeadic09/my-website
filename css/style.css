@@ -531,7 +531,7 @@ body {
    ABOUT SECTION
    ============================ */
 .about-section {
-    padding-bottom: 220px;
+    padding-bottom: 0px;
     position: relative;
     min-height: 100vh;  /* Ensure consistent height */
     perspective: 1100px;
